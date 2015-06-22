@@ -1,13 +1,13 @@
 # TUT Lecture Bot
 
-*Unofficial* Twitter Bot for TUT Lectures
+*Unofficial* Twitter Bot for Reminding TUT Lectures
 
 ## URL
 *We cannot guarantee the validity of the information found there.*
 
-* bachelor
+* bachelor:
 https://twitter.com/tut_lecture_b
-* master
+* master:
 https://twitter.com/tut_lecture_m
 
 
@@ -23,7 +23,7 @@ $ git clone https://github.com/Tatzyr/tut_lecture_bot.git
 
 ```
 $ cd tut_lecture_bot
-$ cp settings.yml.sample settings.yml
+$ mv settings.yml.sample settings.yml
 $ vi settings.yml
 $ bundle install
 $ bundle exec ruby migration.rb
