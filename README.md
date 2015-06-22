@@ -3,12 +3,13 @@
 *Unofficial* Twitter Bot for Reminding TUT Lectures
 
 ## URL
-*We cannot guarantee the validity of the information found there.*
 
 * bachelor:
 https://twitter.com/tut_lecture_b
 * master:
 https://twitter.com/tut_lecture_m
+
+\* *We cannot guarantee the validity of the information found there.*
 
 
 ## Installation
