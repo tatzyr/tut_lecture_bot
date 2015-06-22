@@ -1,0 +1,5 @@
+/vendor/bundle
+Gemfile.lock
+lectures.sqlite3
+log/*
+settings.yml
