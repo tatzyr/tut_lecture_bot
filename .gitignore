@@ -3,3 +3,4 @@ Gemfile.lock
 lectures.sqlite3
 log/*
 settings.yml
+!.gitkeep
