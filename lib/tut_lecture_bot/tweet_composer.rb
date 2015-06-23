@@ -42,9 +42,10 @@ module TUTLectureBot
     private
     def update(data, type, remind = false)
       tweet = render(data, type, remind)
+      grade = normalize(data)[:grade]
 
-      @client_b.update(tweet) if data[:grade].match(/B/)
-      @client_m.update(tweet) if data[:grade].match(/[MD]/)
+      @client_b.update(tweet) if grade.match(/B/)
+      @client_m.update(tweet) if grade.match(/[MD]/)
     end
 
     def render(data, type, remind)
