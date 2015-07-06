@@ -6,7 +6,7 @@
 
 * bachelor:
 https://twitter.com/tut_lecture_b
-* master:
+* master and doctor:
 https://twitter.com/tut_lecture_m
 
 \* *We cannot guarantee the validity of the information found there.*
