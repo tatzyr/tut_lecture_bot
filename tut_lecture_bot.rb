@@ -14,8 +14,8 @@ module TUTLectureBot
     canceled_lectures, extra_lectures = nil, nil
 
     logger.info("accessing")
-    agent = Agent.new
     begin
+      agent = Agent.new
       canceled_lectures = agent.lectures(:canceled)
       extra_lectures = agent.lectures(:extra)
     rescue StandardError => e
