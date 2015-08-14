@@ -38,7 +38,7 @@ $ bundle exec ruby tut_lecture_bot.rb
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/tatzyr/tut_lecture_bot.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Tatzyr/tut_lecture_bot.
 
 
 ## Licence
