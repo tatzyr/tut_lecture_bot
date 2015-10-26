@@ -31,7 +31,9 @@ module TUTLectureBot
         record.save!
       end
 
-      if !record.reminded && Date.parse(record.day) == 12.hours.from_now.to_date
+      tomorrow = Date.parse(record.day) == 12.hours.from_now.to_date
+      today = Date.parse(record.day) == Date.today
+      if !record.reminded && tomorrow && !today
         update(data, type, true)
         record.update(reminded: true)
         yield [data[:name], type, true] if block_given?
