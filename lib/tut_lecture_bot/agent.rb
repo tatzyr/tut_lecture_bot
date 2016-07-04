@@ -1,5 +1,4 @@
 require 'mechanize'
-require 'twitter'
 
 module TUTLectureBot
   class Agent

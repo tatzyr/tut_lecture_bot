@@ -2,6 +2,7 @@ require 'active_support/core_ext/date'
 require 'active_support/core_ext/time'
 require 'active_support/core_ext/numeric/time'
 require 'mustache'
+require 'twitter'
 require_relative 'normalize_string'
 
 
