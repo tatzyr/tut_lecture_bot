@@ -2,9 +2,9 @@ require 'mechanize'
 
 module TUTLectureBot
   class Agent
-    URL = "https://www.ead.tut.ac.jp/board/main.aspx"
-    CANCELED_XPATH = '//*[@id="grvCancel"]/tr'
-    EXTRA_XPATH = '//*[@id="grvSupplement"]/tr'
+    URL = "https://kyomu.office.tut.ac.jp/portal/Public/Board/BoardList.aspx"
+    CANCELED_XPATH = '//*[@id="ctl00_phContents_ucBoardLctList_grvCancel"]/tr'
+    EXTRA_XPATH = '//*[@id="ctl00_phContents_ucBoardLctList_grvSupplement"]/tr'
 
     def initialize
       @agent = Mechanize.new {|a| a.user_agent_alias = "Mac Safari" }
@@ -22,7 +22,7 @@ module TUTLectureBot
             teacher: cell[4],
             grade: cell[5],
             department: cell[6],
-            extra_day: cell[8],
+            extra_day: cell[9],
           }
         }
       when :extra
