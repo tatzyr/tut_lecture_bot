@@ -71,7 +71,7 @@ module TUTLectureBot
       data.dup.tap {|d|
         d[:teacher] = d[:teacher].normalize_name
         d[:grade] = d[:grade].split_strip.join("/")
-        d[:department] = d[:department].split_strip.map{|dep| dep.department_to_number }.join("/")
+        d[:department] = d[:department].split_strip.map{|dep| dep.department_to_number }.sort.join("/")
         d[:day] = d[:day].normalize_date
       }
     end
