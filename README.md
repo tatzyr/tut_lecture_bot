@@ -2,7 +2,7 @@
 
 *Unofficial* Twitter Bot for Reminding TUT Lectures
 
-## URL
+## Twitter URL
 
 * bachelor:
 https://twitter.com/tut_lecture_b
@@ -11,34 +11,29 @@ https://twitter.com/tut_lecture_m
 
 \* *We cannot guarantee the validity of the information found there.*
 
+## Setup
 
-## Installation
-
-### Download
-
-```
-$ git clone https://github.com/Tatzyr/tut_lecture_bot.git
-```
-
-### Initial Setup
-
-```
-$ cd tut_lecture_bot
-$ mv settings.yml.sample settings.yml
-$ vi settings.yml
+```zsh
+### install dependencies
 $ bundle install
-$ bundle exec ruby migration.rb
+
+### create database file
+$ bundle exec ruby create_database.rb
+
+### edit settings
+$ cp settings.rb.sample settings.rb
+$ vi settings.rb
 ```
 
 ### Run
 
-```
-$ bundle exec ruby tut_lecture_bot.rb
+```zsh
+$ bundle exec ruby -r ./settings.rb tut_lecture_bot.rb
 ```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/Tatzyr/tut_lecture_bot.
+Bug reports and pull requests are welcome on GitHub at https://github.com/tatzyr/tut_lecture_bot.
 
 
 ## Licence

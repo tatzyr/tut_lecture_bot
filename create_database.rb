@@ -1,4 +1,4 @@
-require 'active_record'
+require "active_record"
 
 ActiveRecord::Base.establish_connection(
   adapter: "sqlite3",
@@ -16,7 +16,6 @@ ActiveRecord::Migration.create_table :canceled_lectures do |t|
   t.boolean :reminded, default: false
   t.timestamps null: false
 end
-
 
 ActiveRecord::Migration.create_table :extra_lectures do |t|
   t.text :day
